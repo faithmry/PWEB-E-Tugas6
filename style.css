@@ -1,0 +1,164 @@
+/* General styling */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ddd; /* Light grey text for contrast */
+  line-height: 1.6;
+  background: url("https://images.creativemarket.com/0.1.0/ps/7358706/1820/1213/m1/fpnw/wm1/r4ejcddlzrzpyfjdouhnnkfgfjrjuy4xyhhcnkuxt3m6rh05n4fnjqlf92qwdpkn-.jpg?1574658759&s=bdcb7212acfc1980a7cfee59581e102a")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #f0f0f0; /* Lighter text color for readability */
+}
+
+/* Add a subtle dark overlay to improve readability on the background image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Slightly darker overlay for better contrast */
+  z-index: -1;
+}
+
+/* Header styling */
+header {
+  background-color: rgba(0, 0, 0, 0.85); /* Dark background for elegant look */
+  color: #f1c40f; /* Goldish color for text */
+  padding: 3rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  color: #f1c40f; /* Goldish tone */
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #f1c40f;
+}
+
+/* Navigation styling */
+nav {
+  background-color: rgba(0, 0, 0, 0.75); /* Dark transparent background */
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #ecf0f1; /* Light grey text for contrast */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f1c40f; /* Hover effect with goldish color */
+}
+
+/* Main content */
+main {
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: rgba(
+    44,
+    62,
+    80,
+    0.9
+  ); /* Dark, semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+  color: #f1c40f; /* Goldish tone for section headers */
+  border-bottom: 2px solid #f1c40f;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+article {
+  margin-bottom: 2rem;
+}
+
+article h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #ddd; /* Light gray for article headings */
+}
+
+article p {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  color: #b2b2b2; /* Light gray for text */
+}
+
+article span {
+  font-weight: bold;
+  color: #f1c40f; /* Bold gold for price or emphasis */
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.85); /* Dark background */
+  color: #f1c40f; /* Goldish footer text */
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  article h3 {
+    font-size: 1.3rem;
+  }
+
+  article p {
+    font-size: 0.9rem;
+  }
+}
